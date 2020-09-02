@@ -1,5 +1,16 @@
 /*
-https://github.com/steve-vincent/wc-form-generator
+
+<wc-form id="yourid"></wc-form>
+
+Instance methods:
+  drawForm(schema)
+  setData(data)
+  getData: returns obj
+
+Usage:
+  schema: id, label, type[text,dropdown,checkbox]
+  data: {"id": value or array}
+  
 */
 
 const styles = document.createElement('style');
