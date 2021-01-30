@@ -10,6 +10,8 @@ A simple vanilla javascript component. Customize away...
 # HOW TO USE...
 
 ```
+<script type="text/javascript" src="wc-form.js"></script>
+
 <wc-form id="myform"></wc-form>
 
 <script>
