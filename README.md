@@ -19,28 +19,26 @@ var myformschema = [{
   "id": "test1",
   "label": "helo",
   "type": "text"
-},
-{
+},{
   "id": "test2",
   "label": "welcome",
   "type": "dropdown",
   "choices": [0,2,3]
-},
-{
+},{
   "id": "test3",
   "label": "bye",
   "type": "checkbox",
   "choices": [4,5,6]
-}
+}];
 
 //Your form data
 var myformdata = {"test1":"steve","test2":"3","test3":["4","6"]};
 
 //Draw my form
-document.getElementById("myform").drawForm( JSON.parse(myformschema) );
+document.getElementById("myform").drawForm( myformschema );
 
 //Fill my form data
-document.getElementById("myform").setData( JSON.parse(myformdata) );
+document.getElementById("myform").setData( myformdata );
 
 //Get my form data
 var data = document.getElementById("myform").getData();
