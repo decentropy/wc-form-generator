@@ -20,6 +20,12 @@ styles.innerHTML = `
   .fld { background-color:#eeeeee; padding:5px; margin:10px; }
 `;
 
+function htmlToEl(html) {
+  let temp = document.createElement('template');
+  html = html.trim(); // Never return a space text node as a result
+  temp.innerHTML = html;
+  return temp.content.firstChild;
+}
 
 //INPUT TEMPLATE
 var fhtml = {
